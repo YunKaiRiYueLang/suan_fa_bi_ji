@@ -6,14 +6,14 @@
 
 
 void selectSort(){
-    for(int i=1;i<n;i++){
+    for(int i=1;i<n;i++){   //进行n趟操作
         int k=i;
-        for(int j=i;j<n;j++){
+        for(int j=i;j<n;j++){   //选出【i，n】中最小的元素，下表为k
             if(A[j]<A[k]){
                 k=j;
             }
         }
-        int temp=A[i];
+        int temp=A[i];  //交换A【k】和A【i】
         A[i]=A[k];
         A[k]=temp;
     }
